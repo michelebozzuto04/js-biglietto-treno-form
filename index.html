@@ -8,7 +8,24 @@
 </head>
 
 <body>
+    <form id="form">
+        <input id="fullName" type="text" placeholder="Nome e Cognome">
+        <input id="kmNumber" type="text" placeholder="Km da percorrere">
+        <select id="age">
+            <option value="18">Maggiorenne</option>
+            <option value="17">Minorenne</option>
+            <option value="65">Over 65</option>
+        </select>
+        <button id="submitBtn" type="submit">Genera</button>
+    </form>
 
+    <div class="results">
+        <span class="fullNameOutput"></span>
+        <span class="offerOutput"></span>
+        <span class="wagonOutput"></span>
+        <span class="codeOutput"></span>
+        <span class="priceOutput"></span>
+    </div>
 
     <script src="./main.js"></script>
 </body>
