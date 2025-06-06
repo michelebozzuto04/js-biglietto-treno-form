@@ -1,3 +1,4 @@
+/* CSS Reset */
 * {
     padding: 0;
     margin: 0;
@@ -5,9 +6,48 @@
 }
 
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100vh;
     background-image: url("https://images2.alphacoders.com/596/thumb-1920-596297.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 50%;
+        padding: 2rem 3rem;
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    input {
+        width: 400px;
+        font-size: 1rem;
+        padding: 1rem;
+        border-radius: 10px;
+    }
+
+    select {
+        width: 400px;
+    }
+
+    button {
+        width: 400px;
+        font-size: 1rem;
+        padding: 1rem 2rem;
+        border-radius: 20px;
+    }
 }
