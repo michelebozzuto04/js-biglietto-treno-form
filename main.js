@@ -1,4 +1,5 @@
 const form = document.getElementById("form");
+const results = document.getElementById("results");
 const fullNameOutput = document.getElementById("fullNameOutput");
 const offerOutput = document.getElementById("offerOutput");
 const wagonOutput = document.getElementById("wagonOutput");
@@ -36,4 +37,12 @@ form.addEventListener('submit', (event) => {
     wagonOutput.innerText = wagon;
     codeOutput.innerText = code;
     priceOutput.innerText = ticketPrice.toLocaleString("it-IT", { style: "currency", currency: "EUR" });
+
+    if (results.classList.contains("d-none")) {
+        results.classList.remove("d-none");
+    }
+})
+
+form.addEventListener('reset', () => {
+    results.classList.add("d-none");
 })

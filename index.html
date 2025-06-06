@@ -10,6 +10,7 @@
 
 <body>
     <div class="wrapper">
+        <h3>Calcola il prezzo del tuo biglietto</h3>
         <form id="form">
             <input id="fullName" type="text" placeholder="Nome e Cognome">
             <input id="kmNumber" type="text" placeholder="Km da percorrere">
@@ -18,16 +19,56 @@
                 <option value="17">Minorenne</option>
                 <option value="65">Over 65</option>
             </select>
-            <button id="submitBtn" type="submit">Genera</button>
-            <button id="cancelBtn" type="reset">Annulla</button>
+            <div class="btn-container">
+                <button id="submitBtn" class="btn-primary" type="submit">Genera</button>
+                <button id="cancelBtn" class="btn-secondary" type="reset">Annulla</button>
+            </div>
         </form>
 
-        <div class="results">
-            <span id="fullNameOutput"></span>
-            <span id="offerOutput"></span>
-            <span id="wagonOutput"></span>
-            <span id="codeOutput"></span>
-            <span id="priceOutput"></span>
+        <div id="results">
+            <h2>Dettaglio Passeggeri</h2>
+            <div class="results-container">
+                <div class="passenger">
+                    <div class="results-header">
+                        <span>Nome Passeggero</span>
+                    </div>
+                    <div class="results-body">
+                        <span id="fullNameOutput"></span>
+                    </div>
+                </div>
+                <div class="offer">
+                    <div class="results-header">
+                        <span>Offerta</span>
+                    </div>
+                    <div class="results-body">
+                        <span id="offerOutput"></span>
+                    </div>
+                </div>
+                <div class="wagon">
+                    <div class="results-header">
+                        <span>Carrozza</span>
+                    </div>
+                    <div class="results-body">
+                        <span id="wagonOutput"></span>
+                    </div>
+                </div>
+                <div class="passengerName">
+                    <div class="results-header">
+                        <span>Codice CP</span>
+                    </div>
+                    <div class="results-body">
+                        <span id="codeOutput"></span>
+                    </div>
+                </div>
+                <div class="passengerName">
+                    <div class="results-header">
+                        <span>Costo Biglietto</span>
+                    </div>
+                    <div class="results-body">
+                        <span id="priceOutput"></span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
